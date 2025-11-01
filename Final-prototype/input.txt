@@ -1,1 +1,0 @@
-Hello IIoT! Test data for storage verification.
