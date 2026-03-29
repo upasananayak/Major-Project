@@ -1,0 +1,2 @@
+Original Size,Challenge Count,Comm: IoT->Cloud,Comm: IoT->Verifier,Comm: Verifier->Cloud,Comm: Cloud->Verifier,Blockchain: Store Payload,Blockchain: Verify Payload,Storage: Cloud Total,Storage Expansion Ratio
+1024,1,16415,15275,210,3419,8520,672,15639,15.27

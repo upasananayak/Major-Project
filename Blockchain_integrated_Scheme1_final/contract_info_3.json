@@ -1,0 +1,334 @@
+{
+    "address":"0xfCB77deC39D8Ba6214fee34a3Ec4BEe11543B976",
+    "abi":[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "rootHash",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "commitmentHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "FileRegistered",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "version",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "rootHash",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "commitmentHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "FileUpdated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "version",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"name": "VerificationResult",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "deleteFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "rootHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "commitmentHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "registerFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "version",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "computedRoot",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "computedCommitment",
+				"type": "bytes32"
+			}
+		],
+		"name": "submitVerification",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "rootHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "commitmentHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "updateFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "fileExists",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "getLatestRootWithVersion",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "rootHash",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "getLatestStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "getLatestVersion",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "version",
+				"type": "uint256"
+			}
+		],
+		"name": "getVersionCommitment",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "getVersionHistory",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "version",
+				"type": "uint256"
+			}
+		],
+		"name": "getVersionRoot",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "fileId",
+				"type": "string"
+			}
+		],
+		"name": "isFileDeleted",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]}

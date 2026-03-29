@@ -1,0 +1,22 @@
+{
+  "updateFile": {
+    "gasUsed": 103717,
+    "cumulativeGasUsed": 103717,
+    "status": 1
+  },
+  "submitVerification": {
+    "gasUsed": 58521,
+    "cumulativeGasUsed": 58521,
+    "status": 1
+  },
+  "registerFile": {
+    "gasUsed": 140265,
+    "cumulativeGasUsed": 140265,
+    "status": 1
+  },
+  "deleteFile": {
+    "gasUsed": 28739,
+    "cumulativeGasUsed": 28739,
+    "status": 1
+  }
+}

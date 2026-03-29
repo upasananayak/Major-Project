@@ -1,0 +1,257 @@
+{
+    "address":"0x9f09c721CB9d4bee035600d3Fb9a879705CB2BE0",
+    "abi":[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "string",
+				"name": "humanName",
+				"type": "string"
+			}
+		],
+		"name": "FileDeleted",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "string",
+				"name": "humanName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "uniqueId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "versionIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "FileRegistered",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "humanName",
+				"type": "string"
+			}
+		],
+		"name": "deleteFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "humanName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "uniqueId",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "rootHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "commitmentHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "commitments",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[4]",
+				"name": "zkvals",
+				"type": "uint256[4]"
+			}
+		],
+		"name": "registerFile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "uniqueId",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "leafTags",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "bytes32[][]",
+				"name": "proofs",
+				"type": "bytes32[][]"
+			},
+			{
+				"internalType": "uint256[][]",
+				"name": "leafCounts",
+				"type": "uint256[][]"
+			},
+			{
+				"internalType": "uint8[][]",
+				"name": "sigmas",
+				"type": "uint8[][]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "mSum",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rSum",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "indices",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "coefficients",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "z",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "proof_value",
+				"type": "bytes32"
+			}
+		],
+		"name": "verifyTrustless",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "fileHistory",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "humanName",
+				"type": "string"
+			}
+		],
+		"name": "getHistory",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "humanName",
+				"type": "string"
+			}
+		],
+		"name": "getHistoryLength",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "uniqueId",
+				"type": "string"
+			}
+		],
+		"name": "getStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "uniqueId",
+				"type": "string"
+			}
+		],
+		"name": "isFileDeleted",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+}
